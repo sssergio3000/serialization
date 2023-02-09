@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<City size="big">London</City>
+<Street>King Richard</Street>
+<HouseNumber>156</HouseNumber>
+
+<City size="big">Paris</City>
+<Street>Jacko</Street>
+<HouseNumber>16</HouseNumber>
+
+<City size="small">Krakow</City>
+<Street>Robitnycza</Street>
+<HouseNumber>24a</HouseNumber>
+
+<City size="small">Lodz</City>
+<Street>Tworcza</Street>
+<HouseNumber>66</HouseNumber>
+
+<City size="big">Rome</City>
+<Street>Piano</Street>
+<HouseNumber>52B</HouseNumber>
