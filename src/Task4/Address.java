@@ -3,8 +3,10 @@ package Task4;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.ArrayList;
+import java.util.Arrays;
 
-@XmlRootElement
+//@XmlRootElement
 public class Address {
     private String city;
     private String size;
@@ -57,5 +59,18 @@ public class Address {
     @XmlElement
     public void setHouseNumber(String houseNumber) {
         this.houseNumber = houseNumber;
+    }
+}
+    @XmlRootElement (name = "Cities")
+class City{
+    @XmlElement (name = "city")
+    private ArrayList<Address> ct = new ArrayList<>();
+    public void addCity(Address city){
+        ct.add(city);
+        }
+
+    @Override
+    public String toString() {
+        return Arrays.deepToString(ct.toArray());
     }
 }

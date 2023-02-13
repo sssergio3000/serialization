@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<address size="big">
-    <city>Rome</city>
-    <houseNumber>52B</houseNumber>
-    <street>Piano</street>
-</address>
+<Cities>
+    <city size="big">
+        <city>London</city>
+        <houseNumber>156</houseNumber>
+        <street>King Richard</street>
+    </city>
+    <city size="big">
+        <city>Paris</city>
+        <houseNumber>16</houseNumber>
+        <street>Jacko</street>
+    </city>
+    <city size="small">
+        <city>Krakow</city>
+        <houseNumber>24a</houseNumber>
+        <street>Robitnycza</street>
+    </city>
+    <city size="small">
+        <city>Lodz</city>
+        <houseNumber>66</houseNumber>
+        <street>Tworcza</street>
+    </city>
+    <city size="big">
+        <city>Rome</city>
+        <houseNumber>52B</houseNumber>
+        <street>Piano</street>
+    </city>
+</Cities>

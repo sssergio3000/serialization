@@ -11,21 +11,19 @@ public class Main {
     public static void main(String[] args) throws JAXBException {
         List<Address> address = new ArrayList<>();
         File file = new File("JaxBXML.xml");
-        JAXBContext context = JAXBContext.newInstance(Address.class);
+        JAXBContext context = JAXBContext.newInstance(City.class);
         Marshaller marshaller = context.createMarshaller();
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+        City city = new City();
 
 
-        address.add(new Address("London", "big", "King Richard", "156"));
-        address.add(new Address("Paris", "big", "Jacko", "16"));
-        address.add(new Address("Krakow", "small", "Robitnycza", "24a"));
-        address.add(new Address("Lodz", "small", "Tworcza", "66"));
-        address.add(new Address("Rome", "big", "Piano", "52B"));
+        city.addCity(new Address("London", "big", "King Richard", "156"));
+        city.addCity(new Address("Paris", "big", "Jacko", "16"));
+        city.addCity(new Address("Krakow", "small", "Robitnycza", "24a"));
+        city.addCity(new Address("Lodz", "small", "Tworcza", "66"));
+        city.addCity(new Address("Rome", "big", "Piano", "52B"));
 
-        for (Address elem : address) {
-            marshaller.marshal(elem, file);
-//            marshaller.marshal(elem,System.out);
-        }
+        marshaller.marshal(city,file);
 
     }
 }
